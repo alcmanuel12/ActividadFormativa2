@@ -87,29 +87,26 @@ public Tetera(int capacidadMaxima, int capacidadActual) {
 		
 		public void vaciarTe() {
 			capacidadActual = 0;
+			System.out.println("Tu tetera se a vaciado");
 			
 		}
 		
 		public void agregarCafe() {
 			capacidadActual = capacidadActual + taza;
+			System.out.println("Tu tetera se ha llenado con una taza, ahora dispone de " + capacidadActual + "cc");
 		}
 
 
 public static void main(String[] args) {
 	
 	Tetera miTetera = new Tetera("roja", "Porcelana", 1000,150);
-	miTetera.llenarTe();
+	miTetera.agregarCafe();
+	miTetera.agregarCafe();
 	
 	
 
 	
 }
-
-
-
-
-
-
 
 
 
