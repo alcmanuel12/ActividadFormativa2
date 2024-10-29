@@ -42,6 +42,8 @@ public class Restaurante {
 		
 	}
 	
+	Scanner scanner = new Scanner(System.in);
+	static Restaurante restaurante1 = new Restaurante();
 	
 	
 	public void menu1() {
@@ -60,12 +62,12 @@ public class Restaurante {
 	
 	public void menu3() {
 		opcion3 = primerPlato + segundoPlato + postre + bebida;
-		System.out.println("Has elegido la opcion de primer plato, segundo plato, bebida y poste. Su costo es de " + opcion3 + " euros");
+		System.out.println("Has elegido la opcion de primer plato, segundo plato, bebida y postre. Su costo es de " + opcion3 + " euros");
 		
 	}
 	
 	
-	Scanner scanner = new Scanner(System.in);
+	
 	
 	public void selector(){
 		
@@ -77,15 +79,28 @@ public class Restaurante {
 		System.out.println("3º- OPCION: Un primer plato, un segundo plato, una bebida y un postre.");
 		System.out.println("Ingrese un numero del 1 al 3 dependiendo que opcion quiera escoger:  ");
 		int selector = scanner.nextInt();
-		System.out.println("La opcion elegida es " + selector );
 		
+		if (selector == 1) {
 		
+			restaurante1.menu1();
+		
+			
+		} 
+		else if (selector == 2){
+			
+			restaurante1.menu2();
+		} else if (selector == 3) {
+			
+			restaurante1.menu3();
+		}else {
+			
+			System.out.println("Introduzca un numero valido");
+			
+		}	
 	}
 	
 	
 	public static void main(String[] args) {
-		
-		Restaurante restaurante1 = new Restaurante();
 		restaurante1.selector();
 		
 		
