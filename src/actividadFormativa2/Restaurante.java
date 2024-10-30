@@ -94,7 +94,7 @@ public class Restaurante {
 			restaurante1.menu3();
 		}else {
 			
-			System.out.println("Introduzca un numero valido");
+			System.err.println("Introduzca un numero valido");
 			
 		}	
 	}
