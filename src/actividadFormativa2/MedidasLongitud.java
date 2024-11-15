@@ -153,13 +153,18 @@ public class MedidasLongitud {
 		} else if (selec == 2) {
 			
 			MedidasLongitud1.milimetros();
+			
 		} else if (selec == 3) {
 			
 			MedidasLongitud1.pulgadas();
+			
 		} else if (selec == 4) {
+			
 			MedidasLongitud1.pies();
+			
 		} else if (selec == 5) {
 			MedidasLongitud1.yardas();
+			
 		} else {
 			
 			System.err.println("Introduzca un numero valido");
@@ -198,9 +203,7 @@ public class MedidasLongitud {
 		
 		MedidasLongitud1.guardarNum();
 		
-		
-		
-		
+	
 		
 	}
 	
